@@ -22,8 +22,9 @@
 <?php
 
 include('class/Weenect.php');
+include('config.php');
 
-Weenect::login('veka610@gmail.com', '...');
+Weenect::login($user, $pass);
 
 $d = Weenect::getTracker();
 
